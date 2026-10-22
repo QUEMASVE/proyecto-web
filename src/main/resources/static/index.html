@@ -81,8 +81,49 @@
                             <label class="form-label">URL del Avatar (Imagen)</label>
                             <input type="text" id="avatar" class="form-control" placeholder="https://ejemplo.com/foto.jpg">
                         </div>
+                        <div class="mb-3">
+                            <label class="form-label">Biografía o Descripción</label>
+                            <textarea id="bio" class="form-control" rows="2" placeholder="Breve descripción..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Comida Favorita</label>
+                            <input type="text" id="comidaFavorita" class="form-control" placeholder="Ej. Pizza, Seco de gallina...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pasatiempos e Intereses</label>
+                            <input type="text" id="pasatiempos" class="form-control" placeholder="Ej. Ajedrez, Programación...">
+                        </div>
                         <button type="submit" class="btn btn-primary w-100 fw-bold">Guardar Usuario</button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NUEVO: Modal para Vista Detallada de la Tarjeta -->
+    <div class="modal fade" id="modalDetalle" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title fw-bold">Detalles del Perfil</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img id="detalle-avatar" src="" class="rounded-circle shadow mb-3" style="width: 130px; height: 130px; object-fit: cover;" alt="Avatar Detallado">
+                    <h3 id="detalle-nombre" class="fw-bold text-dark mb-1"></h3>
+                    <p id="detalle-email" class="text-muted small mb-3"></p>
+                    
+                    <hr>
+                    
+                    <div class="text-start px-3">
+                        <p class="mb-2"><strong>📞 Teléfono:</strong> <span id="detalle-telefono" class="text-secondary"></span></p>
+                        <p class="mb-2"><strong>📖 Biografía:</strong> <span id="detalle-bio" class="text-secondary"></span></p>
+                        <p class="mb-2"><strong>🍽️ Comida Favorita:</strong> <span id="detalle-comida" class="text-secondary"></span></p>
+                        <p class="mb-0"><strong>🎮 Pasatiempos:</strong> <span id="detalle-pasatiempos" class="text-secondary"></span></p>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light justify-content-center">
+                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
