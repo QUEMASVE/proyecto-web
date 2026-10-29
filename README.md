@@ -1,41 +1,41 @@
-# 🚀 Sistema Web de Gestión de Usuarios y Explorador Rick & Morty
+# 🚀 User Management System & Rick & Morty Explorer
 
-Proyecto académico desarrollado para la materia de Programación. Implementa una arquitectura monolítica en capas con Spring Boot en el Backend, PostgreSQL para la persistencia de datos y una interfaz web dinámica construida con Vanilla JavaScript y Bootstrap 5.
+Academic project developed for the Programming course. Implements a layered monolithic architecture with Spring Boot for the Backend, PostgreSQL for data persistence, and a dynamic web interface built with Vanilla JavaScript and Bootstrap 5.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 - **Backend:** Java 17, Spring Boot 3.3.5, Spring Data JPA.
-- **Base de Datos:** PostgreSQL 17.
-- **Frontend:** HTML5, CSS3 (Efectos Hover), Vanilla JavaScript, Bootstrap 5.
-- **Herramientas & Control de Versiones:** Git, GitHub, NetBeans.
+- **Database:** PostgreSQL 17.
+- **Frontend:** HTML5, CSS3 (Hover Effects), Vanilla JavaScript, Bootstrap 5.
+- **Tools & Version Control:** Git, GitHub, NetBeans.
 
 ---
 
-## 📌 Funcionalidades Principales
+## 📌 Main Features
 
-### 1. Gestión de Usuarios (CRUD Local)
-- **Creación y Edición:** Modales dinámicos para registrar y actualizar usuarios.
-- **Persistencia en BD:** Almacenamiento directo en PostgreSQL (`nombre`, `email`, `telefono`, `avatar`, `bio`, `comidaFavorita`, `pasatiempos`).
-- **Vista Detallada:** Modal especializado que se abre al seleccionar una tarjeta.
-- **Buscador Dinámico:** Filtro en tiempo real por nombre de usuario.
-- **Interfaz Interactiva:** Tarjetas con animaciones `hover` de elevación y zoom en avatares.
+### 1. User Management (Local CRUD)
+- **Create and Edit:** Dynamic modals to register and update users.
+- **Database Persistence:** Direct storage in PostgreSQL (`name`, `email`, `phone`, `avatar`, `bio`, `favoriteFood`, `hobbies`).
+- **Detailed View:** Specialized modal that opens when selecting a card.
+- **Dynamic Search:** Real-time filter by username.
+- **Interactive Interface:** Cards with `hover` animations for elevation and avatar zoom.
 
-### 2. Explorador Rick & Morty (API Externa)
-- Consumo asíncrono de la API pública oficial (`fetch`).
-- Exploración por personajes, ubicaciones y episodios.
-- Paginación interactiva y buscador con **debounce** de 4 segundos.
-
----
-
-## 🌿 Estructura de Ramas (Gitflow)
-
-- `main`: Código oficial y estable listo para producción/defensa.
-- `developer`: Rama activa de desarrollo y consolidación de características.
-- `test`: Rama destinada a pruebas de integración.
+### 2. Rick & Morty Explorer (External API)
+- Asynchronous consumption of the official public API (`fetch`).
+- Exploration of characters, locations, and episodes.
+- Interactive pagination and search with a **4-second debounce**.
 
 ---
 
-## 👥 Autor
-- **Marcos Burga** - Estudiante de Ingeniería
+## 🌿 Branch Structure (Gitflow)
+
+- `main`: Official and stable code ready for production/defense.
+- `developer`: Active development and feature integration branch.
+- `test`: Branch dedicated to integration testing.
+
+---
+
+## 👥 Author
+- **Marcos Burga** - Engineering Student
